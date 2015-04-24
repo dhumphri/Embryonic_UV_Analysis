@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace Embryonic_UV_Analysis
 {
@@ -20,9 +21,21 @@ namespace Embryonic_UV_Analysis
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int Mother_ID = 0;
         public MainWindow()
         {
             InitializeComponent();
+            motherID.Text = Mother_ID.ToString();
+            
+        }
+
+        private void queryClick(object sender, RoutedEventArgs e)
+        {
+            //Debug.Write(motherID + " " + femaleSpawnDate + " " + femaleTank + " " + eggDiameter + " " + num + " " + (femaleUV.SelectionBoxItem as TextBlock).ToString() + " " + gonadColor + " " + eggVolume + 
+            //    " " + femaleDiameter + " " + femaleWeight + " " + femaleHeight +"\n");
+            Debug.Write("click/n");
+            Debug.Write((femaleUV.SelectionBoxItem as TextBlock).ToString());
+            Mother_ID++;
         }
     }
 }

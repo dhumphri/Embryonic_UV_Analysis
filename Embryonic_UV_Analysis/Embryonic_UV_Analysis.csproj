@@ -53,6 +53,28 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Forms\FertilizationForm.xaml.cs">
+      <DependentUpon>FertilizationForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SurvivalForm.xaml.cs">
+      <DependentUpon>SurvivalForm.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Forms\EmbryoCleavageForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\EmbryoForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\FemaleForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\FertilizationForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -61,12 +83,33 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Forms\EmbryoCleavageForm.xaml.cs">
+      <DependentUpon>EmbryoCleavageForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmbryoForm.xaml.cs">
+      <DependentUpon>EmbryoForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FemaleForm.xaml.cs">
+      <DependentUpon>FemaleForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Forms\MaleForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\SurvivalForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\MaleForm.xaml.cs">
+      <DependentUpon>MaleForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NumericTextBox.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
